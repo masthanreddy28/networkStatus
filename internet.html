@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Status</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .internet_status_check{
+            width:300px;
+            height: 200px;
+            border: 1px solid black;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+          display: none;
+        }
+        .online {
+            transition: all 2s;
+            display: block;
+            text-align: center;
+            color: rgb(25, 238, 43);
+        }
+        .offline {
+            display: block;
+            text-align: center;
+            color: rgb(238, 6, 6);
+        }
+        #popup_heading, #popup_paragraph {
+            padding: 10px;
+        }
+       
+      
+    </style>
+</head>
+<body>
+    <div class="internet_status_check">
+        <h1 id="popup_heading"></h1>
+        <p id="popup_paragraph"></p>
+        <span class="material-symbols-outlined">
+       
+            </span >
+            
+    </div>
+    <script src="internet.js">
+       
+    </script>
+</body>
+</html>
